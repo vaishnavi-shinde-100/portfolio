@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <h2><a href="http://localhost:8080/project">Portfolio Page</a></h2>
+        <ul>
+            <li><a href="http://localhost:8080/project/resume">Resume</a></li>
+            <li><a href="http://localhost:8080/project/project">Project</a></li>
+            <li><a href="http://localhost:8080/project/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="resume">
+        <h2 class="heading">Resume</h2>
+        <p class="head">Education</p>
+        <div class="education">
+            <ul>
+                <li>&nbsp;Bachelor Of Engineering-Computer Science <br>
+                    Thakur Shivkumarsingh Memorial Engineering College
+                </li>
+
+                <li>&nbspXII (NCRT) | Gyandeep Higher Secondary School
+                    81.8% | 2022</li>
+                <li>&nbspX (NCRT) | Gyandeep Higher Secondary School
+                    79.8% | 2020</li>
+
+            </ul>
+        </div>
+
+        <p class="head" id="head2">Skills</p>
+        <div class="skill">
+            <ul>
+                <li>&nbspJavaScript</li>
+                <li>&nbspC++ Language</li>
+                <li>&nbspCSS</li>
+                <li>&nbspHTML</li>
+                <li>&nbspMicrosoft World</li>
+                <li>&nbspMicrosoft PowePoint</li>
+            </ul>
+        </div>
+
+        <p class="head" id="head2">Projects</p>
+        <div class="project">
+            <ul>
+                <li>&nbspGoogle Clone</li>
+                <li>&nbspToDo List</li>
+                <li>&nbspSpotify Clone</li>
+                <li>&nbspBackground color</li>
+                <a href="http://localhost:8080/project/project">
+                    <p>click here and see my all projects in detail</p>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <%- include("includes/footer.ejs") %>
+
+</body>
+
+</html>

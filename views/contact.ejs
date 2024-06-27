@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="full_body">
+        <nav class="navbar">
+            <h2><a href="http://localhost:8080/project">Portfolio Page</a></h2>
+            <ul>
+                <li><a href="http://localhost:8080/project/resume">Resume</a></li>
+                <li><a href="http://localhost:8080/project/project">Project</a></li>
+                <li><a href="http://localhost:8080/project/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="add"></h1>
+        <form method="post" action="localhost:8080/project/contact">
+            <div class="contact">
+                <p>First Name</p>
+                <input type="text" name="firstname" id="first_name" class="inp">
+
+                <p>Last Name</p>
+                <input type="text" name="lastname" id="last_name" class="inp">
+
+                <p>Email Id</p>
+                <input type="text" name="email" id="email_id" class="inp">
+
+                <p>Mobile Number</p>
+                <input type="text" name="mobilenumber" id="mobile_number" class="inp">
+                <p>Massege</p>
+                <div class="text_button">
+                    <textarea name="textarea" id="textarea" rows="6" cols="30"></textarea><br><br><br>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+        <script src="/app.js"></script>
+</body>
+
+</html>
